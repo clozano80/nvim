@@ -2,26 +2,32 @@
 Personal nvim configuration:
 With coc, prettier, nerdcomment,...
 
-##installation
+## Installation
 - Install nvim (apt?)
 - create .config/nvim
+copy files init.vim and coc .json to .config/nvim
 - upload files
 - alias vim="nvim"
+
+if coc not installed properly
+cd .vim/plugged/coc...
+yarn install && yarn bild
 
 
 Inside nvim/vim
 :checkhealth "comprobamos que funciona
 :PlugInstall 
-:CocInstall
+:CocInstall <plugin si no está instalado>
 
 :CocCommand #example snippets
 :CocInstall coc-snippets
 
-##special key
+## Special key
 <space>
 
-#Help Api autocomplete
+## Help Api autocomplete
 <ctrl>+P
+Shift K "show tooltip
 :gd (go to definition)
 F2 rename all files with...
 
@@ -32,13 +38,16 @@ F2 rename all files with...
 <ctrl+w>v/h split v or horizontal
 <ctrl+w> <number optional> ">/</+/-"   decrease or increase split window
 
+<ctrl+b>b next open document (no tabs)
+<ctrl+b>1..4 move between opened docs
+
 ## nredtree
 ctrl+n
 select file and "t" #Open in tab 
 select file and "i" split Horz
 select file and "v" split Vertical
 
-##Comment
+## Comment
 Visual mode select and <space>cc
 ++ Comenter toggle in visual
 
@@ -48,9 +57,12 @@ Visual mode select and <space>cc
 ## next tab
 ctrl+t
 
-##Prettier
+## Prettier
 :Prettier or <ctrl+i>
 
-##Search FZF
+## Search FZF
+Ag requires The Silver Searcher (ag) sudo apt install silversearcher-ag
+Rg requires ripgrep (rg) sudo apt install ripgrep
+
 :Ag [PATTERN]	ag search result (ALT-A to select all, ALT-D to deselect all)
 :Rg [PATTERN]	rg search result (ALT-A to select all, ALT-D to deselect all)
