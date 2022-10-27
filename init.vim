@@ -1,7 +1,18 @@
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-pairs',
+  \ 'coc-tsserver',
+  \ 'coc-eslint', 
+  \ 'coc-prettier', 
+  \ 'coc-json', 
+  \ ]
+
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release', 'do': { -> coc#util#install() } }
+Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 Plug 'scrooloose/nerdtree'
 "Plug 'tsony-tsonev/nerdtree-git-plugin'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -10,6 +21,8 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 "Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 Plug 'christoomey/vim-tmux-navigator'
@@ -104,14 +117,7 @@ endfunction
 autocmd BufRead * call SyncTree()
 
 " coc config
-let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-tsserver',
-  \ 'coc-eslint', 
-  \ 'coc-prettier', 
-  \ 'coc-json', 
-  \ ]
+
 " from readme
 " if hidden is not set, TextEdit might fail.
 set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
@@ -239,3 +245,8 @@ tnoremap <Esc> <C-\><C-n>
 nnoremap <silent> <leader>t :split term://bash<CR>:set nonumber<CR> <C-w>J <C-w>10- i
 nnoremap <silent> <C-T> :tabn<CR>
 nnoremap <silent> <C-i> :Prettier<CR>
+nnoremap <silent> <C-b>b :bn<CR>
+nnoremap <silent> <C-b>1 :b1<CR>
+nnoremap <silent> <C-b>2 :b2<CR>
+nnoremap <silent> <C-b>3 :b3<CR>
+nnoremap <silent> <C-b>4 :b4<CR>
