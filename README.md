@@ -4,6 +4,7 @@ With coc, prettier, nerdcomment,...
 
 ## Installation
 - Install nvim nodejs and yarn (apt?)
+- Install nerd font for icons https://github.com/ryanoasis/nerd-fonts
 - create .config/nvim
 copy files init.vim and coc .json to .config/nvim
 - upload files
