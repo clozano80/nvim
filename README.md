@@ -19,7 +19,7 @@ copy files init.vim and coc .json to .config/nvim
  ```
  
 ```
-if coc not installed properly
+if coc not installed properly or with coc#util#install needs to:
 cd .vim/plugged/coc...
 yarn install && yarn bild
 or
