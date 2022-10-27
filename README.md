@@ -1,8 +1,8 @@
 # nvim
-"""
+---
 Personal nvim configuration:
 With coc, prettier, nerdcomment,...
-"""
+---
 
 ## Installation
 
