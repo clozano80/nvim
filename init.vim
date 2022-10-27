@@ -6,6 +6,9 @@ let g:coc_global_extensions = [
   \ 'coc-prettier', 
   \ 'coc-json', 
   \ ]
+  
+" disable warning if neovim below 0.5.0
+let g:coc_disable_startup_warning = 1
 
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
