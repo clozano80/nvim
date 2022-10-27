@@ -30,8 +30,8 @@ Inside nvim/vim
 :CocInstall coc-snippets
 
 ## Special key
-<space>
-
+"\<space\>" espacio
+ 
 ## Help Api autocomplete
 <ctrl>+P
 Shift K "show tooltip
