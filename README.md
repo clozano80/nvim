@@ -1,4 +1,4 @@
-# nvim
+# nvim for ubuntu/debian
 ```
 Personal nvim configuration:
 With coc, prettier, nerdcomment,...
@@ -6,15 +6,35 @@ With coc, prettier, nerdcomment,...
 
 ## Installation
 
-- Install nvim nodejs and yarn (apt?)
+
+- Install nvim nodejs and yarn 
+  
+  ``` 
+  sudo apt install neovim nodejs yarn   #if node is over v.14
+  
+  # if ubuntu focal nodejs version 10.19... para node >= 14
+   curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+   sudo apt-get install -y nodejs
+
+
+   # Using Debian, as root
+   curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+   apt-get install -y nodejs
+      
+  ```
+  
 - Install nerd font for icons https://github.com/ryanoasis/nerd-fonts
 - create .config/nvim
 copy files init.vim and coc .json to .config/nvim
 - upload files
 - alias vim="nvim"
 
-- Install plug.vim if errors E117 (in neovim is like follows)
+- Install plug.vim if errors E117 (in neovim is like follows) 
 ```
+ sh -c 'curl --insecure -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \                                                                https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+ 
+ #problems insecure certificates use --insecure
+ 
  sh -c 'curl --insecure -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \                                                                https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
  ```
  
