@@ -3,7 +3,7 @@ Personal nvim configuration:
 With coc, prettier, nerdcomment,...
 
 ## Installation
-- Install nvim (apt?)
+- Install nvim nodejs and yarn (apt?)
 - create .config/nvim
 copy files init.vim and coc .json to .config/nvim
 - upload files
