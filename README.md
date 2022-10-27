@@ -22,6 +22,8 @@ copy files init.vim and coc .json to .config/nvim
 if coc not installed properly
 cd .vim/plugged/coc...
 yarn install && yarn bild
+or
+npm install
 ```
 
 ```
