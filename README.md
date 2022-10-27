@@ -4,15 +4,16 @@ With coc, prettier, nerdcomment,...
 
 ## Installation
 - Install nvim (apt?)
+- create .config/nvim
+copy files init.vim and coc .json to .config/nvim
+- upload files
+- alias vim="nvim"
+
 - Install plug.vim if errors E117 (in neovim is like follows)
 
  sh -c 'curl --insecure -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \                                                                https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
  
  
-- create .config/nvim
-copy files init.vim and coc .json to .config/nvim
-- upload files
-- alias vim="nvim"
 
 if coc not installed properly
 cd .vim/plugged/coc...
