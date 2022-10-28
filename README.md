@@ -1,4 +1,4 @@
-# nvim for ubuntu/debian
+# nvim for ubuntu/debian - nvim 0.5.0 (not lua)
 ```
 Personal nvim configuration:
 With coc, prettier, nerdcomment,...
